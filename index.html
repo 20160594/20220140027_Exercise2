@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Multimedia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="StyleCHS.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="glow text-center">Halaman Multimedia</h1>
+        <h2 class="mt-4">
+            Audio  menggunakan file lokal, Vidio dengan link, Gambar dengan file lokal. Bertemakan malam & kesunyian
+        </h2>
+        <div class="text-center mt-4">
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="Oleg Byonic  The Sting.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="text-center mt-4">
+            <h3>Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZfRAkzVt-Q?si=IfRWDiPvoxTDHl2n" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="text-center mt-4">
+            <h3>Gambar</h3>
+            <img src="moon-sky-anime-wallpapers.jpg" alt="Night Image" class="img-fluid" style="width: 80%; height: 80%">
+        </div>
+        <div class="text-center mt-5">
+            <button id="surveyButton" class="btn btn-primary">Survey</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('surveyButton').addEventListener('click', function() {
+            window.location.href = 'form.html';
+        });
+    </script>
+</body>
+</html>
